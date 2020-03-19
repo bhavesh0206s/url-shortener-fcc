@@ -6,7 +6,7 @@ var bodyParser = require("body-parser")
 const dns = require('dns');
 let UrlModel = require('./models/urlModel')
 
-let monogoUrl = 'mongodb+srv://bhavesh:bhavesh1234@cluster0-awgwv.mongodb.net/test?retryWrites=true&w=majority'
+let monogoUrl = 'mongodb+srv://bhavesh:<password>@cluster0-awgwv.mongodb.net/test?retryWrites=true&w=majority'
 mongoose.connect(monogoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 
 var cors = require('cors');
